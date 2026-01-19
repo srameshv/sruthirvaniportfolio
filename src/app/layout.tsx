@@ -37,7 +37,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="max-w-2xl mx-auto px-6">
+        <div className="max-w-2xl mx-auto px-6 my-8 bg-white rounded-lg shadow-[0_2px_20px_rgba(0,0,0,0.04)]">
           <header className="pt-12 pb-8">
             <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
               {navLinks.map((link) =>
@@ -47,7 +47,7 @@ export default function RootLayout({
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-500 hover:text-gray-900"
+                    className="text-neutral-500 hover:text-neutral-900"
                   >
                     {link.label}
                   </a>
@@ -55,7 +55,7 @@ export default function RootLayout({
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-gray-500 hover:text-gray-900"
+                    className="text-neutral-500 hover:text-neutral-900"
                   >
                     {link.label}
                   </Link>

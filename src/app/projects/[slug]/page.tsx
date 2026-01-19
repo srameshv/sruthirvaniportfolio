@@ -83,11 +83,11 @@ export default async function ProjectPage({
 
   return (
     <div>
-      <Link href="/projects" className="text-sm text-gray-400 hover:text-gray-600">
+      <Link href="/projects" className="text-sm text-neutral-500 hover:text-neutral-700">
         ← Projects
       </Link>
 
-      <h1 className="text-xl font-medium text-gray-900 mt-8 mb-12">{project.title}</h1>
+      <h1 className="text-xl font-medium text-neutral-900 mt-8 mb-12">{project.title}</h1>
 
       <div className="space-y-10">
         <Section title="Problem">{project.problem}</Section>
@@ -97,7 +97,7 @@ export default async function ProjectPage({
         <Section title="Learnings">{project.learnings}</Section>
 
         <section>
-          <h2 className="text-sm font-medium text-gray-400 uppercase tracking-wide mb-3">
+          <h2 className="text-sm font-medium text-neutral-500 uppercase tracking-wide mb-3">
             Links
           </h2>
           <div className="flex gap-6">
@@ -107,7 +107,7 @@ export default async function ProjectPage({
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900 underline underline-offset-2"
+                className="text-neutral-700 hover:text-neutral-900 underline underline-offset-2"
               >
                 {link.label}
               </a>
@@ -122,10 +122,10 @@ export default async function ProjectPage({
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section>
-      <h2 className="text-sm font-medium text-gray-400 uppercase tracking-wide mb-3">
+      <h2 className="text-sm font-medium text-neutral-500 uppercase tracking-wide mb-3">
         {title}
       </h2>
-      <p className="text-gray-600 leading-relaxed">{children}</p>
+      <p className="text-neutral-700 leading-relaxed">{children}</p>
     </section>
   );
 }

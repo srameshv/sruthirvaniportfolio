@@ -31,7 +31,7 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <div>
-      <h1 className="text-xl font-medium text-gray-900 mb-10">Projects</h1>
+      <h1 className="text-xl font-medium text-neutral-900 mb-10">Projects</h1>
 
       <ul className="space-y-5">
         {projects.map((project) => (
@@ -40,10 +40,10 @@ export default function ProjectsPage() {
               href={`/projects/${project.slug}`}
               className="group block"
             >
-              <span className="font-medium text-gray-900 group-hover:text-gray-600">
+              <span className="font-medium text-neutral-900 group-hover:text-neutral-700">
                 {project.title}
               </span>
-              <span className="text-gray-500 leading-relaxed block mt-0.5">
+              <span className="text-neutral-500 leading-relaxed block mt-0.5">
                 {project.description}
               </span>
             </Link>
